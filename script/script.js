@@ -292,7 +292,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         userForm.addEventListener('input', (event) => {
             if (event.target.type === 'email') {
-                event.target.value = event.target.value.replace(/[^[a-zA-Z+^@-_'~*!]/ig, '');
+                event.target.value = event.target.value.replace(/[^a-zA-Z@_'~*.!-]/ig, '');
             }
         });
 
@@ -310,7 +310,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         mainForm.addEventListener('input', (event) => {
             if (event.target.type === 'email') {
-                event.target.value = event.target.value.replace(/[^[a-zA-Z+^@-_'~*!]/ig, '');
+                event.target.value = event.target.value.replace(/[^a-zA-Z@_'~*.!-]/ig, '');
             }
         });
 
@@ -339,7 +339,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         footerFormInput.addEventListener('input', (event) => {
             if (event.target.type === 'email') {
-                event.target.value = event.target.value.replace(/[^[a-zA-Z+^@-_'~*!]/ig, '');
+                event.target.value = event.target.value.replace(/[^a-zA-Z@_'~*.!-]/ig, '');
             }
         });
 
@@ -384,7 +384,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     }
     formValidation();
-
 // Калькулятор
 
     function calc(price = 100) {
